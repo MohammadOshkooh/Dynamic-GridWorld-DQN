@@ -1,0 +1,33 @@
+environment:
+  grid_size: 20
+  sensor_radius: 1
+  max_steps: 180
+  moving_obstacles: 5
+  goal_randomized_each_episode: true
+  goal_visible: true
+  static_walls_visible: local_only
+  moving_obstacles_visible: local_only
+  step_penalty: -0.05
+  blocked_action_penalty: -0.75
+  goal_reward: 20.0
+  potential_shaping_scale: 0.5
+
+dqn:
+  learning_rate: 0.0001
+  gamma: 0.99
+  replay_capacity: 100000
+  batch_size: 128
+  learning_starts: 3000
+  train_frequency: 4
+  target_update_interval: 2000
+  epsilon_start: 1.0
+  epsilon_end: 0.05
+  epsilon_decay_steps: 300000
+  hidden_dim: 256
+  max_grad_norm: 10.0
+
+training:
+  episodes: 20000
+  evaluation_episodes: 200
+  seed: 42
+  checkpoint_interval: 5000
