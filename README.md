@@ -308,5 +308,6 @@ The notebooks save checkpoints, CSV histories, plots, and episode recordings und
 - The goal is globally visible. The agent senses walls and moving obstacles locally rather than receiving a full-map observation.
 - The DQN is feed-forward and has no recurrent memory. In the stochastic-enemy setting, the agent does not receive each enemy's speed interval or pause state directly. It must infer enemy behavior from local observations, but the policy has no explicit observation history.
 - Each reported training run uses a single training seed (`42`). Multiple independent training runs would be needed to make statistical claims about performance or robustness.
-#   D y n a m i c - G r i d W o r l d - D Q N  
- "# Dynamic-GridWorld-DQN" 
+#   D y n a m i c - G r i d W o r l d - D Q N 
+ 
+ "# Dynamic-GridWorld-DQN" 
